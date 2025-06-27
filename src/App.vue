@@ -2,6 +2,8 @@
   <div id="app">
     <h1>Счетчик: {{ count }}</h1>
     <button @click="increment">Увеличить</button>
+    <!-- Новая кнопка -->
+    <button @click="decrement">Уменьшить</button>
   </div>
 </template>
 
@@ -15,6 +17,9 @@ export default {
   methods: {
     increment() {
       this.count++;
+    },
+    decrement() {
+      this.count--;
     },
   },
 };
